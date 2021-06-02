@@ -1,9 +1,46 @@
+body {
+  margin: 0px;
+}
+
+html {
+  font-size: 10px;
+}
+
+.gridContainer{
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas:
+      "header header header"
+      "content content content"
+      "footer footer footer";
+}
+
 #navbar {
   overflow: hidden;
   background-color: #333c41;
   margin: 0px;
+  font-size: 16px;
   height: 40px;
+  grid-area: header;
 }
+
+.Content{
+  grid-area: content;
+  height: 200vh;
+  width: 100vw;
+  background-color: orangered;
+  overflow: hidden;
+  /* overflow-y: scroll; */
+}
+
+ .bottomBar{
+   height: 50px;
+   background-color: black;
+   grid-area: footer;
+ }
 
 /* Navbar links */
 #navbar a {
@@ -12,9 +49,9 @@
   color: #f2f2f2;
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
-  height: 14px;
-  padding: 5px 12px;
-  margin: 5px 12px;
+  height: 18px;
+  padding: 6px 14px;
+  margin: 5px 6px;
   border-radius: 7px;
   text-align: center;
 }
@@ -38,10 +75,6 @@ img {
   position: fixed;
   top: 0;
   width: 100%;
-}
-
-body {
-  margin: 0px;
 }
 
 /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
