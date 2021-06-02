@@ -1,4 +1,5 @@
 body {
+  /* overflow: hidden; */
   margin: 0px;
 }
 
@@ -7,8 +8,8 @@ html {
 }
 
 .gridContainer{
-  height: 100%;
-  width: 100%;
+  height: 100vh;
+  width: 100vw;
   display: grid;
   grid-template-columns: auto auto auto;
   grid-template-rows: auto auto auto;
@@ -19,26 +20,29 @@ html {
 }
 
 #navbar {
-  overflow: hidden;
+  /* display: grid; */
   background-color: #333c41;
   margin: 0px;
   font-size: 16px;
   height: 40px;
-  grid-area: header;
+  width: 100vw;
+  /* grid-area: header; */
 }
 
 .Content{
+  display: grid;
   grid-area: content;
   height: 200vh;
   width: 100vw;
   background-color: orangered;
   overflow: hidden;
-  /* overflow-y: scroll; */
+  overflow-y: scroll;
 }
 
  .bottomBar{
    height: 50px;
    background-color: black;
+   display: grid;
    grid-area: footer;
  }
 
