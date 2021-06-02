@@ -31,12 +31,6 @@ a {
 
 /** end of global classes styling **/
 
-.container {
-  max-width: 1000px;
-  width: 100%;
-  margin: 0 auto;
-}
-
 .btn {
   padding: 0 20px;
   height: 40px;
