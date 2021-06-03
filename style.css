@@ -5,13 +5,19 @@ body {
 }
 
 a {
-  color: #f2f2f2;
   text-decoration: none;
 }
 
-a:hover {
+.nav-link {
+  color: #f2f2f2;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+}
+
+.nav-link:hover {
   background-color: whitesmoke;
   color: #333c41;
+  border-radius: 0.8rem;
 }
 
 .btn {
@@ -75,7 +81,6 @@ header {
 
 nav {
   font-weight: 420;
-
   width: 35vw;
   display: flex;
   flex-direction: row;
@@ -138,7 +143,8 @@ nav {
   width: calc(100% / 3.7);
   margin-top: 10px;
   border: 1px solid #000;
-  border-radius: 3px;
+  border-radius: 2rem;
+  box-shadow: 0.1rem 0.2rem grey;
 }
 
 .event > .level {
@@ -148,6 +154,7 @@ nav {
   width: 100%;
   text-transform: uppercase;
   font-weight: 700;
+  border-radius: 2rem 2rem 0rem 0rem;
 }
 
 
@@ -212,6 +219,7 @@ footer {
   margin-top: 30px;
   background-color: #333c41;
   padding: 20px;
+  height: 30vh;
 }
 
 footer > ul {
