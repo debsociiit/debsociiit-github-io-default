@@ -223,13 +223,27 @@ footer {
 }
 
 footer > ul {
-  display: flex;
-  justify-content: flex-end;
+  /* display: flex; */
+  /* justify-content: flex-end; */
+  list-style-type: none;
 }
 
 footer > ul > li {
-  padding: 0 10px;
+  color: white;
+  margin: 1.5rem;
+  width: 20vw;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.8rem;
 }
+
+footer > ul > li > a {
+  color: white;
+  /* float: right; */
+}
+
+/* footer > ul > li > img {
+  height:min-content;
+} */
 
 footer > span {
   margin-top: 5px;
