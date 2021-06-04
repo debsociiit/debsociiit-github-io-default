@@ -174,42 +174,20 @@ nav {
 
 
 footer {
-  margin-top: 30px;
-  background-color: #333c41;
-  padding: 20px;
-  height: 30vh;
-}
-
-footer > ul {
-  /* display: flex; */
-  /* justify-content: flex-end; */
-  list-style-type: none;
-}
-
-footer > ul > li {
-  color: white;
-  margin: 1.5rem;
-  width: 20vw;
-  padding: 0.5rem 1.2rem;
-  border-radius: 0.8rem;
-}
-
-footer > ul > li > a {
-  color: white;
-  /* float: right; */
-}
-
-/* footer > ul > li > img {
-  height:min-content;
-} */
-
-footer > span {
-  margin-top: 5px;
-  margin-right: 10px;
+  margin-top: 20px;
+  background-color: #222424;
+  padding: 6px;
   display: flex;
-  justify-content: flex-end;
-  font-size: 0.9em;
+  flex-direction: column;
+}
+
+footer > a {
   color: white;
+  margin: 6px auto;
+  width: 250px;
+  padding: 8px 8px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .blue-text{
