@@ -179,12 +179,13 @@ footer {
   padding: 6px;
   display: flex;
   flex-direction: column;
+  text-align: center;
 }
 
-footer > a {
+footer > div > a {
   color: white;
   margin: 6px auto;
-  width: 250px;
+  width: 320px;
   padding: 8px 8px;
   border-radius: 10px;
   text-align: center;
@@ -194,11 +195,17 @@ footer > a {
   color: blue;
 }
 
+footer > div {
+  display: flex;
+  align-items: center;
+  height: 4vh;
+}
+
 #footer-text {
   text-align: center;
   color: white;
   margin: 6px auto;
-  width: 250px;
+  width: 320px;
   padding: 8px 8px;
   border-radius: 10px;
   background-color: rgba(67,101,172,255);
