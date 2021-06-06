@@ -193,3 +193,18 @@ footer > a {
 .blue-text{
   color: blue;
 }
+
+#footer-text {
+  text-align: center;
+  color: white;
+  margin: 6px auto;
+  width: 250px;
+  padding: 8px 8px;
+  border-radius: 10px;
+  background-color: rgba(67,101,172,255);
+}
+
+#footer-logo {
+  height: 48px;
+  inline-size: auto;
+}
