@@ -182,13 +182,19 @@ footer {
   text-align: center;
 }
 
-footer > div > a {
+footer > a {
   color: white;
   margin: 6px auto;
   width: 320px;
   padding: 8px 8px;
   border-radius: 10px;
   text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+a > img {
+  margin:auto;
 }
 
 .blue-text{
@@ -208,7 +214,6 @@ footer > div {
   width: 320px;
   padding: 8px 8px;
   border-radius: 10px;
-  background-color: rgba(67,101,172,255);
 }
 
 #footer-logo {
