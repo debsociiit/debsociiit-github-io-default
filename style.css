@@ -191,20 +191,11 @@ footer > a {
   text-align: center;
   display: flex;
   align-items: center;
-}
-
-a > img {
-  margin:auto;
+  height: 1rem;
 }
 
 .blue-text{
   color: blue;
-}
-
-footer > div {
-  display: flex;
-  align-items: center;
-  height: 4vh;
 }
 
 #footer-text {
@@ -217,6 +208,5 @@ footer > div {
 }
 
 #footer-logo {
-  height: 48px;
-  inline-size: auto;
+  height: 1.5rem;
 }
