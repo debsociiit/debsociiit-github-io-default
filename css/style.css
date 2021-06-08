@@ -16,8 +16,8 @@ a {
 }
 
 .nav-link:hover {
-  background-color: whitesmoke;
-  color: #333c41;
+  background-color: #c0c4cc;
+  color: #171b1d;
   border-radius: 0.8rem;
 }
 
@@ -99,4 +99,10 @@ footer > a {
 
 #footer-logo {
   height: 1.5rem;
+}
+
+#current-nav {
+  background-color: whitesmoke;
+  color: #333c41;
+  border-radius: 0.8rem;
 }
