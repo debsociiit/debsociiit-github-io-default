@@ -7,19 +7,17 @@
   margin-top: 60px;
 }
 
-.event {
+.card {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: calc(100% / 3.7);
-  margin-top: 10px;
-  border: 1px solid #000;
-  border-radius: 2rem;
+  background-color: white;
+  /* text-align: center; */
+  width: 800px /*calc(100% / 3.7)*/;
+  margin-top: 20px;
+  border-radius: 30px;
   box-shadow: 0.1rem 0.2rem grey;
 }
 
-.event > .level {
+.card > .level {
   background-color: #ddd;
   color: black;
   padding: 15px 0;
@@ -29,18 +27,18 @@
   border-radius: 2rem 2rem 0rem 0rem;
 }
 
-.event > h3 {
+/* .card > h3 {
   margin: 15px 0;
-}
+} */
 
-.event > button {
+.card > button {
   border: 0;
   margin: 15px 0;
   background-color: #f1c40f;
   font-weight: 400;
 }
 
-.event > button:hover {
+.card > button:hover {
   background-color: orange;
   transition: background-color 1s;
 }
@@ -49,13 +47,30 @@
   #event {
     flex-direction: column;
   }
-  .event {
+  .card {
     max-width: 300px;
     width: 100%;
     margin: 0 auto;
     margin-bottom: 10px;
   }
 }
-.blue-text {
-  color: blue;
+
+.content{
+  /* float: right; */
+  /* background-color: purple; */
+}
+
+.image {
+  width: 300px;
+  max-height: 100%;
+  margin: 15px;
+  float: left;
+  /* background-color: orangered; */
+  display: flex;
+  align-items: center;
+}
+
+.image > img{
+  width: 100%;
+  border-radius: 15px;
 }
