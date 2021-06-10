@@ -9,13 +9,13 @@ a {
   text-decoration: none;
 }
 
-.nav-link {
+.bin-nav-link {
   color: #f2f2f2;
   text-decoration: none;
   padding: 0.5rem 1rem;
 }
 
-.nav-link:hover {
+.bin-nav-link:hover {
   background-color: #c0c4cc;
   color: #171b1d;
   border-radius: 0.8rem;
