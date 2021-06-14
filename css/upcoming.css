@@ -7,6 +7,11 @@
   margin-top: 60px;
 }
 
+.img-border{
+    margin: 15px;
+    border-radius: 15px;
+}
+
 /*.card {*/
   /*display: flex;*/
   /*background-color: white;*/
@@ -76,7 +81,3 @@
   /*border-radius: 15px;*/
 /*}*/
 
-.img-border{
-    margin: 15px;
-    border-radius: 15px;
-}
