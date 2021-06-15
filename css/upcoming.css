@@ -7,55 +7,77 @@
   margin-top: 60px;
 }
 
-.event {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  text-align: center;
-  width: calc(100% / 3.7);
-  margin-top: 10px;
-  border: 1px solid #000;
-  border-radius: 2rem;
-  box-shadow: 0.1rem 0.2rem grey;
+.img-border{
+    margin: 15px;
+    border-radius: 15px;
 }
 
-.event > .level {
-  background-color: #ddd;
-  color: black;
-  padding: 15px 0;
-  width: 100%;
-  text-transform: uppercase;
-  font-weight: 700;
-  border-radius: 2rem 2rem 0rem 0rem;
-}
+/*.card {*/
+  /*display: flex;*/
+  /*background-color: white;*/
+  /*[> text-align: center; <]*/
+  /*width: 800px [>calc(100% / 3.7)<];*/
+  /*margin-top: 20px;*/
+  /*border-radius: 30px;*/
+  /*box-shadow: 0.1rem 0.2rem grey;*/
+/*}*/
 
-.event > h3 {
-  margin: 15px 0;
-}
+/*.card > .level {*/
+  /*background-color: #ddd;*/
+  /*color: black;*/
+  /*padding: 15px 0;*/
+  /*width: 100%;*/
+  /*text-transform: uppercase;*/
+  /*font-weight: 700;*/
+  /*border-radius: 2rem 2rem 0rem 0rem;*/
+/*}*/
 
-.event > button {
-  border: 0;
-  margin: 15px 0;
-  background-color: #f1c40f;
-  font-weight: 400;
-}
+/*/* .card > h3 {*/
+  /*margin: 15px 0;*/
+/*} */*/
 
-.event > button:hover {
-  background-color: orange;
-  transition: background-color 1s;
-}
+/*.card > button {*/
+  /*border: 0;*/
+  /*margin: 15px 0;*/
+  /*background-color: #f1c40f;*/
+  /*font-weight: 400;*/
+/*}*/
 
-@media (max-width: 720px) {
-  #event {
-    flex-direction: column;
-  }
-  .event {
-    max-width: 300px;
-    width: 100%;
-    margin: 0 auto;
-    margin-bottom: 10px;
-  }
-}
-.blue-text {
-  color: blue;
-}
+/*.card > button:hover {*/
+  /*background-color: orange;*/
+  /*transition: background-color 1s;*/
+/*}*/
+
+/*@media (max-width: 720px) {*/
+  /*#event {*/
+    /*flex-direction: column;*/
+  /*}*/
+  /*.card {*/
+    /*max-width: 300px;*/
+    /*width: 100%;*/
+    /*margin: 0 auto;*/
+    /*margin-bottom: 10px;*/
+  /*}*/
+/*}*/
+
+/*.content{*/
+    /*margin: 10px;*/
+  /*[> float: right; <]*/
+  /*[> background-color: purple; <]*/
+/*}*/
+
+/*.image {*/
+  /*width: 300px;*/
+  /*max-height: 100%;*/
+  /*margin: 15px;*/
+  /*float: left;*/
+  /*[> background-color: orangered; <]*/
+  /*display: flex;*/
+  /*align-items: center;*/
+/*}*/
+
+/*.image > img{*/
+  /*width: 100%;*/
+  /*border-radius: 15px;*/
+/*}*/
+
