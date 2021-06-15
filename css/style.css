@@ -88,41 +88,10 @@ footer > a {
   text-align: center;
   display: flex;
   align-items: center;
-  height: 1rem;
-}
-
-footer > a:hover {
-  /*background-color: #c0c4cc;*/
-  /*color: #171b1d;*/
-  /*border-radius: 0.8rem;*/
-    filter: brightness(120%);
-}
-
-.bin-footer {
-  margin-top: 20px;
-  background-color: #222424;
-  padding: 12px;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-}
-
-.bin-footer-a {
-  color: white;
-  margin-top: 6px;
-  margin-bottom: 6px;
-  margin-left: auto;
-  margin-right: auto;
-  width: 320px;
-  padding: 8px 8px;
-  border-radius: 10px;
-  text-align: center;
-  display: flex;
-  align-items: center;
   height: 2rem;
 }
 
-.bin-footer > a:hover {
+footer > a:hover {
   /*background-color: #c0c4cc;*/
   /*color: #171b1d;*/
   /*border-radius: 0.8rem;*/
@@ -138,14 +107,7 @@ footer > a:hover {
   border-radius: 10px;
 }
 
-#bin-footer-text {
-  text-align: center;
-  color: white;
-  margin: 6px auto;
-  width: 320px;
-  padding: 8px 8px;
-  border-radius: 10px;
-}
+
 
 #footer-logo {
   height: 1.5rem;
