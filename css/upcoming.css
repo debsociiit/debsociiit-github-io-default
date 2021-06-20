@@ -7,10 +7,75 @@
   margin-top: 60px;
 }
 
-.img-border{
+.img-border {
     margin: 15px;
     border-radius: 15px;
 }
+
+.register {
+    background-color: #76aa63;
+    border-color: #76aa63;
+}
+
+.register:hover {
+    background-color: #76aa63;
+    border-color: #76aa63;
+    filter: brightness(120%);
+}
+
+.discord {
+    background-color: rgba(114, 134, 212, 255);
+    border-color: rgba(114, 134, 212, 255);
+}
+
+.discord:hover {
+    background-color: rgba(114, 134, 212, 255);
+    border-color: rgba(114, 134, 212, 255);
+    filter: brightness(120%);
+}
+
+.instagram {
+    background-color: rgba(196, 0, 122, 255);
+    border-color: rgba(196, 0, 122, 255);
+}
+
+.instagram:hover {
+    background-color: rgba(196, 0, 122, 255);
+    border-color: rgba(196, 0, 122, 255);
+    filter: brightness(120%);
+}
+
+.facebook {
+    background-color: rgba(58, 88, 151, 255);
+    border-color: rgba(58, 88, 151, 255);
+}
+
+.facebook:hover {
+    background-color: rgba(58, 88, 151, 255);
+    border-color: rgba(58, 88, 151, 255);
+    filter: brightness(120%);
+}
+
+.btn {
+    border-radius: 0.75rem;
+    margin-right: 0.25rem;
+}
+
+.button-holder {
+    position: absolute;
+    bottom: 1rem;
+    right: 2rem;
+}
+
+.super-button {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+#card-button-logo{
+    height: 1.5rem;
+  }
+
 
 /*.card {*/
   /*display: flex;*/
@@ -34,7 +99,7 @@
 
 /*/* .card > h3 {*/
   /*margin: 15px 0;*/
-/*} */*/
+/*} */
 
 /*.card > button {*/
   /*border: 0;*/
@@ -80,4 +145,3 @@
   /*width: 100%;*/
   /*border-radius: 15px;*/
 /*}*/
-
