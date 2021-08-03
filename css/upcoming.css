@@ -7,141 +7,70 @@
   margin-top: 60px;
 }
 
-.img-border {
-    margin: 15px;
-    border-radius: 15px;
+.card {
+  display: flex;
+  background-color: white;
+  /* text-align: center; */
+  width: 800px /*calc(100% / 3.7)*/;
+  margin-top: 20px;
+  border-radius: 30px;
+  box-shadow: 0.1rem 0.2rem grey;
 }
 
-.register {
-    background-color: #76aa63;
-    border-color: #76aa63;
+.card > .level {
+  background-color: #ddd;
+  color: black;
+  padding: 15px 0;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 2rem 2rem 0rem 0rem;
 }
 
-.register:hover {
-    background-color: #76aa63;
-    border-color: #76aa63;
-    filter: brightness(120%);
+/* .card > h3 {
+  margin: 15px 0;
+} */
+
+.card > button {
+  border: 0;
+  margin: 15px 0;
+  background-color: #f1c40f;
+  font-weight: 400;
 }
 
-.discord {
-    background-color: rgba(114, 134, 212, 255);
-    border-color: rgba(114, 134, 212, 255);
+.card > button:hover {
+  background-color: orange;
+  transition: background-color 1s;
 }
 
-.discord:hover {
-    background-color: rgba(114, 134, 212, 255);
-    border-color: rgba(114, 134, 212, 255);
-    filter: brightness(120%);
-}
-
-.instagram {
-    background-color: rgba(196, 0, 122, 255);
-    border-color: rgba(196, 0, 122, 255);
-}
-
-.instagram:hover {
-    background-color: rgba(196, 0, 122, 255);
-    border-color: rgba(196, 0, 122, 255);
-    filter: brightness(120%);
-}
-
-.facebook {
-    background-color: rgba(58, 88, 151, 255);
-    border-color: rgba(58, 88, 151, 255);
-}
-
-.facebook:hover {
-    background-color: rgba(58, 88, 151, 255);
-    border-color: rgba(58, 88, 151, 255);
-    filter: brightness(120%);
-}
-
-.btn {
-    border-radius: 0.75rem;
-    margin-right: 0.25rem;
-}
-
-.button-holder {
-    position: absolute;
-    bottom: 1rem;
-    right: 2rem;
-}
-
-.super-button {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-}
-
-#card-button-logo{
-    height: 1.5rem;
+@media (max-width: 720px) {
+  #event {
+    flex-direction: column;
   }
+  .card {
+    max-width: 300px;
+    width: 100%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+}
 
+.content{
+  /* float: right; */
+  /* background-color: purple; */
+}
 
-/*.card {*/
-  /*display: flex;*/
-  /*background-color: white;*/
-  /*[> text-align: center; <]*/
-  /*width: 800px [>calc(100% / 3.7)<];*/
-  /*margin-top: 20px;*/
-  /*border-radius: 30px;*/
-  /*box-shadow: 0.1rem 0.2rem grey;*/
-/*}*/
+.image {
+  width: 300px;
+  max-height: 100%;
+  margin: 15px;
+  float: left;
+  /* background-color: orangered; */
+  display: flex;
+  align-items: center;
+}
 
-/*.card > .level {*/
-  /*background-color: #ddd;*/
-  /*color: black;*/
-  /*padding: 15px 0;*/
-  /*width: 100%;*/
-  /*text-transform: uppercase;*/
-  /*font-weight: 700;*/
-  /*border-radius: 2rem 2rem 0rem 0rem;*/
-/*}*/
-
-/*/* .card > h3 {*/
-  /*margin: 15px 0;*/
-/*} */
-
-/*.card > button {*/
-  /*border: 0;*/
-  /*margin: 15px 0;*/
-  /*background-color: #f1c40f;*/
-  /*font-weight: 400;*/
-/*}*/
-
-/*.card > button:hover {*/
-  /*background-color: orange;*/
-  /*transition: background-color 1s;*/
-/*}*/
-
-/*@media (max-width: 720px) {*/
-  /*#event {*/
-    /*flex-direction: column;*/
-  /*}*/
-  /*.card {*/
-    /*max-width: 300px;*/
-    /*width: 100%;*/
-    /*margin: 0 auto;*/
-    /*margin-bottom: 10px;*/
-  /*}*/
-/*}*/
-
-/*.content{*/
-    /*margin: 10px;*/
-  /*[> float: right; <]*/
-  /*[> background-color: purple; <]*/
-/*}*/
-
-/*.image {*/
-  /*width: 300px;*/
-  /*max-height: 100%;*/
-  /*margin: 15px;*/
-  /*float: left;*/
-  /*[> background-color: orangered; <]*/
-  /*display: flex;*/
-  /*align-items: center;*/
-/*}*/
-
-/*.image > img{*/
-  /*width: 100%;*/
-  /*border-radius: 15px;*/
-/*}*/
+.image > img{
+  width: 100%;
+  border-radius: 15px;
+}
