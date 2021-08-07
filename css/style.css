@@ -72,12 +72,49 @@ nav {
   background-color: white;
 }
 
+.social ul {
+  padding: 0;
+  margin: 0;
+}
+
+.social li {
+  list-style-type: none;
+}
+
 .icon {
-  padding-top: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+#insta {
+  padding-top: 0;
+}
+
+#github {
+  padding-bottom: 0;
 }
 
 @media (max-width: 720px) {
   .navlist {
     text-align: center;
+  }
+}
+
+@media (max-width: 512px) {
+  .social {
+    transform: rotate(-90deg);
+    transform-origin: left bottom;
+  }
+
+  .social svg {
+    transform: rotate(90deg);
+  }
+
+  #insta {
+    padding-top: 0.5rem;
+  }
+
+  #github {
+    padding-bottom: 0.5rem;
   }
 }
