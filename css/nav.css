@@ -96,7 +96,6 @@
   }
   
   .Logo > img {
-    /* src: url('../debsociiit.github.io/resources/logo.svg'); */
     content: url('../resources/logo.svg');
   }
   /* .topnav > .title > img:hover {
