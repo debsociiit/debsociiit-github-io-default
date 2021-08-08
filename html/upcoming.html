@@ -4,26 +4,40 @@
     <title>DebSoc IIIT</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/upcoming.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script type="text/javascript" src="../js/footer.js" defer></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
   <body>
-    <nav id="navbar">
-      <a href="index.html">
-        <img
-          class="logopic"
-          src="../resources/Logo.jpg"
-          alt="original trombones logo"
-        />
-      </a>
-      <div class="navlist">
-        <a class="nav-link" href="index.html">Home</a>
-        <a id="current-nav" class="nav-link" href="upcoming.html">Upcoming</a>
-        <a class="nav-link" href="team.html">The Team</a>
-        <a class="nav-link" href="about.html">About Us</a>
+    <div class="topnav" id="navbar">
+      <div class="title">
+        <a class = "Logo" href="index.html"><img alt="Debate Club Logo" /></a>
       </div>
-    </nav>
+      <div class="pages">
+        <a href="index.html" class="inactive"
+          ><i class="fa fa-home"></i> HOME</a
+        >
+        <a href="upcoming.html" class="inactive"
+          ><i class="fa fa-calendar"></i> UPCOMING</a
+        >
+        <a href="team.html" class="active"
+          ><i class="fa fa-group"></i> THE TEAM</a
+        >
+        <a href="archive.html" class="inactive"
+          ><i class="fa fa-dropbox"></i> ARCHIVE</a
+        >
+      </div>
+      <div class="right">
+        <a href="javascript:void(0)" onclick="toggle()" class="burger"
+          ><img id="iconPic" src="down.svg"
+        /></a>
+      </div>
+    </div>
 
     <section id="Upcoming">
       <!-- <h2>Upcoming</h2> -->
@@ -64,7 +78,7 @@
       </div>
     </section>
 
-    <foo-ter>
-    </foo-ter>
+    <foo-ter> </foo-ter>
   </body>
+  <script scr="../js/navbar.js"></script>
 </html>
