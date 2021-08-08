@@ -8,6 +8,7 @@
     --clr-light: #1F1F1F;
     --clr-dark: #FFFFFF;
     --clr-buttons: invert(0%);
+    --clr-buttons-active: invert(100%);
   }
   
   @media (prefers-color-scheme: dark) {
@@ -15,12 +16,14 @@
       --clr-light: #1F1F1F;
       --clr-dark: #FFFFFF;
       --clr-buttons: invert(100%);
+      --clr-buttons-active: invert(0%);
     }
   
     .darkmode {
       --clr-light: #FFFFFF;
       --clr-dark: #000000;
       --clr-buttons: invert(0%);
+      --clr-buttons-active: invert(100%);
     }
   }
   
@@ -67,7 +70,7 @@
   .topnav {
     overflow: hidden;
     background-color: var(--clr-light);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
     position: fixed;
     top: 0;
     width: 100%;
@@ -92,7 +95,7 @@
     padding: 8px;
     display: flex;
     filter: var(--clr-buttons);
-    width: 150px;
+    /* width: 150px; */
   }
   
   .Logo > img {
@@ -112,6 +115,8 @@
   .topnav > .pages > a {
     width: 120px;
     display: block;
+    /* display: flex;
+    align-content: center; */
     color: var(--clr-dark);
     text-align: center;
     text-decoration: none;
@@ -120,9 +125,13 @@
     border-radius: 12px;
     margin: 12px 6px;
   }
+
+  /* .topnav > .pages > a > img {
+    margin-top: 0.5rem;
+  } */
   
-  .topnav > .pages > a > i {
-    font-size: 1.2rem;
+  .topnav > .pages > a:not(.active) > img {
+    filter: var(--clr-buttons);
   }
   
   .topnav > .pages > a:hover {
@@ -130,9 +139,14 @@
     background: var(--clr-accent);
   }
   .topnav > .pages > a.active {
-    color: #FFFFFF;
-    background-color: var(--clr-primary);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    /* filter: var(--clr-buttons); */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  .topnav > .pages > a.active > img {
+    filter: var(--clr-buttons-active);
   }
   
   .topnav > .right {
@@ -143,12 +157,12 @@
     /* .topnav > .title > p {
       display: none;
     } */
-    .Logo {
+    .topnav > .title {
       width: 50px;
     }
   
     .Logo > img {
-      content : url(https://cdn.discordapp.com/icons/759490199016308736/3de56b369debef06c7120e430007a5e8.png?size=256);
+      content : url(../resources/debsocsmall.svg);
     }
   
     /* .topnav > .right {
