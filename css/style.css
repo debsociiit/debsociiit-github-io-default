@@ -1,3 +1,7 @@
+html {
+  font-size: 14px;
+}
+
 body {
   background-color: white;
   margin: 0;
@@ -23,7 +27,6 @@ a {
 .btn {
   padding: 0 20px;
   height: 40px;
-  font-size: 1em;
   font-weight: 900;
   text-transform: uppercase;
   border: 3px black solid;
@@ -117,6 +120,7 @@ nav {
   .social ul li {
     display: inline;
   }
+
   .social ul {
     padding: 0;
     list-style-type: none;
