@@ -1,5 +1,5 @@
 #The-Team {
-  margin: 4rem 15rem;
+  margin: 3.5rem 15rem;
   color: black;
   text-rendering: optimizeLegibility;
 }
@@ -37,7 +37,7 @@
 
 .dp img {
   border-radius: 0.25rem;
-  width: 18rem;
+  width: 16rem;
 }
 
 .position {
