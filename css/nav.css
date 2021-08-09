@@ -3,12 +3,14 @@
     --clr-dark: #000000;
     --clr-primary: #000000;
     --clr-accent: #AF7B2D;
+    --clr-buttons: invert(0%);
+    --clr-buttons-active: invert(100%);
   }
   .darkmode {
     --clr-light: #1F1F1F;
     --clr-dark: #FFFFFF;
-    --clr-buttons: invert(0%);
-    --clr-buttons-active: invert(100%);
+    --clr-buttons: invert(100%);
+    --clr-buttons-active: invert(0%);
   }
   
   @media (prefers-color-scheme: dark) {
