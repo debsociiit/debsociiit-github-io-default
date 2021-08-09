@@ -63,72 +63,8 @@ nav {
   }
 }
 
-.social {
-  position: fixed;
-  right: 1rem;
-  bottom: 1rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  padding: 1rem;
-  justify-content: space-around;
-  border-radius: 1rem;
-  background-color: white;
-}
-
-.social ul {
-  padding: 0;
-  margin: 0;
-}
-
-.social img {
-  width: 2rem;
-  height: 2rem;
-}
-
-.social li {
-  list-style-type: none;
-}
-
-.icon {
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-}
-
-#insta {
-  padding-top: 0;
-}
-
-#github {
-  padding-bottom: 0;
-}
-
 @media (max-width: 720px) {
   .navlist {
     text-align: center;
-  }
-}
-
-@media (max-width: 512px) {
-  .social {
-    left: 50%;
-    transform: translateX(-50%);
-    margin: 0 auto;
-    width: max-content;
-  }
-  .social img {
-    padding: 0 0.5rem;
-  }
-  .social ul li {
-    display: inline;
-  }
-
-  .social ul {
-    padding: 0;
-    list-style-type: none;
-  }
-  #insta {
-    padding-left: 0;
-  }
-  #github {
-    padding-right: 0;
   }
 }
