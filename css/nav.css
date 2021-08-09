@@ -97,7 +97,7 @@ body {
 }
 
 .Logo > img {
-  content: url("../resources/logo.svg");
+  content: url("../resources/navbar/logo.svg");
 }
 
 .pages {
@@ -168,7 +168,7 @@ body {
   }
 
   .Logo > img {
-    content: url(../resources/debsocsmall.svg);
+    content: url(../resources/navbar/debsocsmall.svg);
   }
   .right {
     width: 50px;
