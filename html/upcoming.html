@@ -5,43 +5,15 @@
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="../css/upcoming.css" />
     <link rel="stylesheet" href="../css/nav.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <script type="text/javascript" src="../js/footer.js" defer></script>
     <script type="text/javascript" src="../js/navbar.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
 
-  <body>
-    <div class="topnav" id="navbar">
-      <div class="title">
-        <a class="Logo" href="index.html"><img alt="Debate Club Logo" /></a>
-      </div>
-      <div class="pages">
-        <a href="index.html" class="inactive"
-          ><img src="../resources/home_icon.svg" alt="Home Icon"><span> HOME</span></a
-        >
-        <a href="upcoming.html" class="inactive"
-          ><img src="../resources/upcoming_icon.svg" alt="Upcoming Icon"> UPCOMING</a
-        >
-        <a href="team.html" class="active"
-          ><img src="../resources/team_icon.svg" alt="Team Icon"> THE TEAM</a
-        >
-        <a href="archive.html" class="inactive"
-          ><img src="../resources/archive_icon.svg" alt="Archive Icon"> ARCHIVE</a
-        >
-      </div>
-      <div class="right">
-        <a href="javascript:void(0)" onclick="toggle()" class="burger"
-          ><img id="iconPic" src="../resources/down.svg"
-        /></a>
-      </div>
-    </div>
+  <body onload="active('upcoming')">
+    <na-vi> </na-vi>
 
     <section id="Upcoming">
-      <!-- <h2>Upcoming</h2> -->
       <div class="card" id="WW3">
         <div class="image">
           <img src="../resources/Logo.jpg" />

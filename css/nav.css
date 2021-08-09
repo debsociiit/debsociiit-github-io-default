@@ -78,19 +78,15 @@ body {
   top: 0;
   width: 100%;
   height: 60px;
-
   display: grid;
-  /* grid-template-columns: auto auto auto; */
   grid-template-columns: repeat(3, 1fr);
-  /* justify-content:; */
 }
 
-.topnav > .title {
-  width: 300px;
+.title {
+  width: 200px;
   display: flex;
   justify-content: flex-start;
   justify-self: flex-start;
-  padding-left: 8px;
   height: 60px;
 }
 .Logo {
@@ -103,18 +99,15 @@ body {
 .Logo > img {
   content: url("../resources/logo.svg");
 }
-/* .topnav > .title > img:hover {
-    filter: invert(25%) sepia(75%) saturate(401%) hue-rotate(107deg) brightness(92%) contrast(83%);
-  } */
 
-.topnav > .pages {
+.pages {
   display: flex;
   justify-content: center;
   justify-self: center;
   line-height: 35px;
   height: 60px;
 }
-.topnav > .pages > a {
+.pages > a {
   width: 120px;
   display: block;
   /* display: flex;
@@ -122,137 +115,90 @@ body {
   color: var(--clr-dark);
   text-align: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 14px;
 
   border-radius: 12px;
-  margin: 12px 6px;
+  margin: 12px 3px;
 }
 
-.topnav > .pages > a > img {
+.pages > a > img {
   position: relative;
   top: 25%;
   transform: translateY(-25%);
+  margin-right: 0.5rem;
 }
 
-.topnav > .pages > a:not(.active) > img {
+.pages > a:not(.active) > img {
   filter: var(--clr-buttons);
 }
 
-.topnav > .pages > a:hover {
-  color: #ffffff;
-  background: var(--clr-accent);
-}
-.topnav > .pages > a.active {
+.pages > a:hover {
   color: var(--clr-light);
   background-color: var(--clr-dark);
   /* filter: var(--clr-buttons); */
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
-.topnav > .pages > a.active > img {
+.pages > a:hover > img {
   filter: var(--clr-buttons-active);
 }
 
-.topnav > .right {
+.pages > a.active {
+  color: var(--clr-light);
+  background-color: var(--clr-dark);
+  /* filter: var(--clr-buttons); */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.pages > a.active > img {
+  filter: var(--clr-buttons-active);
+}
+
+.right {
   display: none;
 }
 
-@media screen and (max-width: 900px) {
-  /* .topnav > .title > p {
-      display: none;
-    } */
-  .topnav > .title {
+/* @media screen and (max-width: 900px) {
+  
+} */
+
+@media screen and (max-width: 750px) {
+  .title {
     width: 50px;
   }
 
   .Logo > img {
     content: url(../resources/debsocsmall.svg);
   }
-
-  /* .topnav > .right {
-      width: 50px;
-      display: flex;
-      justify-content: flex-end;
-      padding-right: 8px;
-      height: 60px;
-    }
-    .topnav > .right > .burger {
-      padding: 8px;
-      width: 20px;
-      display: flex;
-      filter: var(--clr-buttons);
-    }
-    .topnav > .right > .burger:hover {
-      filter: invert(49%) sepia(66%) saturate(446%) hue-rotate(357deg) brightness(90%) contrast(93%);
-    }
-    .topnav > .right > .burger > img {
-      width: 100%;
-    }
-    .topnav > .right > .close {
-      display: none;
-    } */
-
-  /*--all toggle classes go below--*/
-  /* .topnav.open {
-      width: 100%;
-      height: 120px;
-    
-      display:flex;
-      flex-wrap: wrap;
-      justify-content:space-between;
-    } */
-
-  /* .topnav.open > .right > .close {
-      padding: 8px;
-      width: 20px;
-      display: flex;
-      filter: var(--clr-buttons);
-    }
-    .topnav.open > .right > .close:hover {
-      filter: invert(49%) sepia(66%) saturate(446%) hue-rotate(357deg) brightness(90%) contrast(93%);
-    }
-    .topnav.open > .right > .close > i {
-      width: 100%;
-    }
-    .topnav.open > .right > .burger {
-      display: none;
-    } */
-}
-
-@media screen and (max-width: 512px) {
-  .topnav > .right {
+  .right {
     width: 50px;
     display: flex;
     justify-content: flex-end;
-    padding-right: 8px;
+    justify-self: flex-end;
+    padding-right: 20px;
     height: 60px;
   }
-  .topnav > .right > .burger {
+  .right > .arrow {
     padding: 8px;
     width: 20px;
     border-radius: 50%;
     display: flex;
     filter: var(--clr-buttons);
   }
-  .topnav > .right > .burger:hover {
+  /* .right > .arrow:hover {
     filter: invert(49%) sepia(66%) saturate(446%) hue-rotate(357deg)
       brightness(90%) contrast(93%);
-  }
-  .topnav > .right > .burger > img {
+  } */
+  .right > .arrow > img {
     width: 200%;
     border-radius: 50%;
-    /* filter: invert(100%);
-      background-color: white; */
-  }
-  .topnav > .right > .close {
-    display: none;
   }
   .topnav > .pages > .inactive {
     display: none;
   }
 
   .topnav.open {
-    height: 280px;
+    height: 240px;
   }
 
   .topnav.open > .pages {
