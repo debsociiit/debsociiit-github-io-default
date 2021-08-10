@@ -8,24 +8,17 @@
   /* overflow: hidden; */
 }
 
-/* , bold (used in card headings)
-
-title: 18px, bold (used for "deadline" in upcoming and names in team page)
- */
-
 body {
   font-size: 14px;
 }
 
-
 .card {
   display: flex;
   background-color: white;
-  /* text-align: center; */
-  width: 55em /*calc(100% / 3.7)*/;
+  width: 52em;
   margin-top: 1em;
   border-radius: 1em;
-  padding: 0.5em;
+  padding: 1em;
 
   overflow: hidden;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -37,8 +30,8 @@ body {
     flex-direction: column;
   }
   .card {
-    max-width: 300px;
-    width: 100%;
+    width: max-content;
+    margin: 1em;
   }
 
   #feli-debate {
@@ -56,13 +49,18 @@ body {
   .up-btn {
     margin-left: 0em !important;
   }
+
+  /* .up-logo {
+    background-color: #a1178a;
+  } */
 }
 
 .image {
   width: 40%; /*not working with em or rem*/
   max-height: 100%;
   float: left;
-  margin: 0.6em;
+  /* margin: 0.6em; */
+  padding: 0em 1em 0 0;
 
   display: flex;
   align-items: center;
@@ -80,30 +78,23 @@ body {
 
 /************************/
 .up-content {
-  padding: 0em 0.5em;
   font-weight: 500;
   width: 30em;
-  /* margin: 0em 0.1em; */
-
-  /* background-color: blue; */
 }
 
 .up-heading {
   font-size: 28px;
-  padding: 0em 0.2em;
-  position: relative;
   font-weight: bold;
-  /* margin: 0.1em 0.1em 0.2em 0em; */
-  
-  /* clear: right; */
+
+  padding: 0em 0 1rem 0;
+  position: relative;
 }
 
 .up-btn {
   font-size: 16px;
   text-transform: uppercase;
+  text-align: center;
 
-  float: right;
-  /* margin: 0.5em;  */
   padding: 0.5em 1em;
   
   border: none;
@@ -117,20 +108,21 @@ body {
 .up-ddline {
   font-size: 18px;
   font-weight: bold;
-  
-  float: left;
-  /* margin: 1em 0.4em 0.1em 0.4em; */
 
-  /* background-color: red; */
-  
+  flex: 1;
+  padding: 0.5em 0;  
 }
 
 .up-logo {
   position: relative;
   float: right;
 
-  /* display: inline-block; */
+  padding-left: 1.5rem;
+}
 
-  /* margin: 0.2em; */
-  padding: 0.5em 0.6em;
+.up-bottom {
+  display: flex;
+  align-self: flex-end;
+
+  margin-top: 1em;
 }
