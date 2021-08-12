@@ -46,6 +46,7 @@
     transform: translateX(-50%);
     margin: 0 auto;
     width: max-content;
+    height: 2rem;
   }
   .social img {
     padding: 0 0.5rem;
