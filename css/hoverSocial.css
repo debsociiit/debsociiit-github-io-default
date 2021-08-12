@@ -36,6 +36,10 @@
   padding-bottom: 0.25rem;
 }
 
+.social a {
+  text-decoration: none;
+}
+
 @media (max-width: 900px) {
   .social {
     left: 50%;
