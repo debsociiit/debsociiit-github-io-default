@@ -9,7 +9,7 @@ body {
   font-size: 14px;
 }
 
-ul {
+.up-list {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -18,7 +18,7 @@ ul {
   align-self: center;
 }
 
-ul li {
+.up-sublist {
   margin: 0rem;
   width: 100%;
   padding: 0;
@@ -51,7 +51,7 @@ ul li {
   }
 
   .navSpace {
-    margin-top: 5rem;
+    margin-top: 1rem;
   }
 
   .up-hide {
