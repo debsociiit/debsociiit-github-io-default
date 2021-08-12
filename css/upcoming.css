@@ -1,37 +1,53 @@
 #Upcoming {
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 4rem;
-
-  /* overflow: hidden; */
+  margin: 4rem 0 0 0;
 }
 
 body {
   font-size: 14px;
 }
 
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+
+  align-self: center;
+}
+
+ul li {
+  margin: 0rem;
+  width: 100%;
+  padding: 0;
+  padding-bottom: 1rem;
+
+  align-self: center;
+}
+
 .card {
   display: flex;
   background-color: white;
-  width: 52rem;
-  margin-top: 1rem;
+  width: 52.6rem;
+  margin: 1rem auto 0 auto;
   border-radius: 1rem;
   padding: 1rem;
 
+  align-self: center;
+  justify-self: center;
+
+  position: relative;
   overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-  /* background-color: yellow; */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3); 
 }
 
 @media (max-width: 800px) {
-  #event {
-    flex-direction: column;
-  }
   .card {
-    width: max-content;
-    margin-bottom: 0.5rem;
+    width: 90%;
+    margin: auto;
+    min-height: 7rem;
   }
 
   .navSpace {
@@ -46,36 +62,59 @@ body {
     display: none;
   }
 
-  /* .up-logo {
-    background-color: #a1178a;
-  } */
+  #up-headm {
+    float: left;
+  }
+
+  .up-top {
+    width: 80vw;
+  }
+
+  #up-logom {
+      width: 2rem;
+  }
+  
+  .up-ddline {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 400px)
+{
+  .card {
+    margin-left: auto;
+    margin-right: auto;   
+  }
+  
+  .up-heading {
+    max-width: 60%;
+    margin-bottom: 2rem; /*temp fix*/
+  }
+
+  .up-ddline {
+    max-width: 55%;
+    margin-top: 28rem;
+  }
 }
 
 .image {
-  width: 40%; /*not working with em or rem*/
-  max-height: 100%;
+  
   float: left;
-  /* margin: 0.6rem; */
-  padding: 0rem 1rem 0 0;
+  padding: 0 1rem 0 0;
 
   display: flex;
   align-items: center;
-
-  overflow: hidden;
-
-  /* background-color: orange; */
 }
 
 .image > img{
-  width: 100%;
-  height: 100%;
+  width: 20rem;
+  height: 20rem;
   border-radius: 0.25rem;
 }
 
 /************************/
 .up-content {
   font-weight: 500;
-  width: 30rem;
 }
 
 .up-heading {
@@ -84,6 +123,8 @@ body {
 
   padding: 0 0 1rem 0;
   position: relative;
+
+  max-width: 80%;
 }
 
 .up-btn {
@@ -92,41 +133,53 @@ body {
   text-align: center;
 
   overflow: hidden;
-
-  /* padding: 0.75rem 1rem 0.5rem 1rem; */
   
   border: none;
   border-radius: 0.25rem;
-  background-color: rgb(43, 179, 54);
   color: white;
   display: flex;
+
   align-items: center;
   justify-content: center;
 
   min-width: 7.5rem;
   min-height: 2.5rem;
-
-  /* background-color: blueviolet; */
+  
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
 }
 
 .up-ddline {
   font-size: 18px;
   font-weight: bold;
-
-  flex: 1;
   padding: 0.5rem 0;  
+  position: absolute;
+  bottom: 1rem;
+}
+
+.up-logos{
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
 }
 
 .up-logo {
-  position: relative;
-  float: right;
-
-  padding-left: 1.5rem;
+  padding-left: 1rem;
 }
 
-.up-bottom {
+.up-top {
   display: flex;
-  align-self: flex-end;
+}
 
-  margin-top: 1rem;
+.register {
+  background-color: #008D63;
+}
+
+.join {
+  background-color: #5865F2;
+}
+
+.apply {
+  background-color: #00A4EF;
 }
