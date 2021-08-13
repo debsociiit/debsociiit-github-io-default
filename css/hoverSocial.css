@@ -36,12 +36,17 @@
   padding-bottom: 0.25rem;
 }
 
-@media (max-width: 512px) {
+.social a {
+  text-decoration: none;
+}
+
+@media (max-width: 900px) {
   .social {
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
     width: max-content;
+    height: 2rem;
   }
   .social img {
     padding: 0 0.5rem;
