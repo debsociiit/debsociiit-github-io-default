@@ -1,0 +1,108 @@
+#Archives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3.75rem;
+}
+
+.card {
+  background-color: white;
+  width: 52rem /*calc(100% / 3.7)*/;
+  margin-top: 1rem;
+  border-radius: 1rem;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  padding: 1rem;
+}
+
+.card__button {
+  font-size: 28px;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+  text-align: left;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+svg {
+  float: right;
+}
+
+.card__button--active + .card__content { display: block; }
+
+.arrowVisibility {visibility: visible;}
+
+.card__content {
+  display: none;
+  overflow: auto;
+  font-size: 14px;
+}
+
+.events {
+  font-size: 18px;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.events li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+.dates {
+  min-width: 13rem;
+}
+
+.event-name {
+  font-weight: bold;
+  min-width: 18rem;
+}
+
+.activities {
+  list-style-type: none;
+}
+
+.positions {
+  min-width: 7rem;
+  width: min-content;
+  text-align: right;
+}
+
+.names {
+  padding-left: 1rem;
+}
+
+.team {
+  display: flex;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.info {
+  display: flex;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+@media (max-width: 800px) {
+  .card {
+    width: 90%;
+    margin: 0.5rem auto;
+  }
+}
+
+.members {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.members li {
+  padding: 0;
+}
