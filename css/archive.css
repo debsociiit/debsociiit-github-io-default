@@ -71,13 +71,12 @@ svg {
 
 .positions {
   min-width: 7rem;
-  flex: 2;
+  width: min-content;
   text-align: right;
 }
 
 .names {
   padding-left: 1rem;
-  flex: 8;
 }
 
 .team {
