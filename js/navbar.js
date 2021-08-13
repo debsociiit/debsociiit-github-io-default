@@ -21,7 +21,7 @@ class Navi extends HTMLElement {
         <a href="team.html" id="team" class="inactive"
           ><img src="../resources/navbar/team_icon.svg" alt="Team Icon"> THE TEAM</a
         >
-        <a href="about.html" id="archive" class="inactive"
+        <a href="archive.html" id="archive" class="inactive"
           ><img src="../resources/navbar/archive_icon.svg" alt="Archive Icon"> ARCHIVE</a
         >
       </div>
