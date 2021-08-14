@@ -46,12 +46,12 @@ openNav = () => {
   if(window.innerWidth <= 800)
     document.getElementById("navbar").className += " open";
 
-  document.getElementById("iconPic").src = "../resources/navbar/up.svg";
+  document.getElementById("iconPic").src = "../resources/up.svg";
 }
 
 closeNav = () => {
   document.getElementById("navbar").className = "topnav";
-  document.getElementById("iconPic").src = "../resources/navbar/down.svg";
+  document.getElementById("iconPic").src = "../resources/down.svg";
 }
 
 toggle = () => {
