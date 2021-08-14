@@ -8,7 +8,7 @@
 
 .card {
   background-color: white;
-  width: 52rem /*calc(100% / 3.7)*/;
+  width: 52rem;
   margin-top: 1rem;
   border-radius: 1rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
@@ -23,14 +23,19 @@
   text-align: left;
   background-color: transparent;
   border: none;
-  outline: none;
   cursor: pointer;
-  padding-left: 0;
-  padding-right: 0;
+  padding: 0;
 }
 
-svg {
+.icon {
   float: right;
+}
+
+.ongoing {
+  float: right;
+  font-weight: 500;
+  font-size: 18px;
+  margin-top: 0.6rem;
 }
 
 .card__button--active + .card__content { display: block; }
@@ -100,7 +105,9 @@ svg {
 
 .members {
   list-style-type: none;
-  padding-left: 0;
+  padding: 0;
+  padding-bottom: 1rem;
+  margin: 0;
 }
 
 .members li {
