@@ -141,6 +141,10 @@ body {
   filter: var(--clr-buttons-active);
 }
 
+.active {
+  pointer-events: none;
+}
+
 .right {
   display: none;
 }

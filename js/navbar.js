@@ -1,12 +1,12 @@
 class Navi extends HTMLElement {
   constructor(path) {
-      super();
-      this.path = path;
-      console.log(path)
+    super();
+    this.path = path;
+    console.log(path)
   }
   connectedCallback(path) {
-      console.log(path);
-      this.innerHTML = `
+    console.log(path);
+    this.innerHTML = `
     <div class="topnav" id="navbar">
       <div class="title">
         <a class="Logo" href="index.html"><img alt="Debate Club Logo" /></a>
@@ -26,7 +26,7 @@ class Navi extends HTMLElement {
         >
       </div>
       <div class="right">
-        <a href="javascript:void(0)" onclick="toggle()" class="arrow"
+        <a href="javascript:void(0)" class="arrow"
           ><img id="iconPic" src="../resources/navbar/down.svg"
         /></a>
       </div>
@@ -35,20 +35,39 @@ class Navi extends HTMLElement {
   }
 }
 
-function active(id){
+active = (id) => {
   document.getElementById(id).classList.add("active");
   document.getElementById(id).classList.remove("inactive");
 }
 
 customElements.define("na-vi", Navi);
 
-function toggle() {
-    var x = document.getElementById("navbar");
-    if (x.className === "topnav") {
-      x.className += " open";
-      document.getElementById("iconPic").src = "../resources/navbar/up.svg";
-    } else {
-      x.className = "topnav";
-      document.getElementById("iconPic").src = "../resources/navbar/down.svg";
-    }
-  }
+openNav = () => {
+  if(window.innerWidth <= 800)
+    document.getElementById("navbar").className += " open";
+
+  document.getElementById("iconPic").src = "../resources/navbar/up.svg";
+}
+
+closeNav = () => {
+  document.getElementById("navbar").className = "topnav";
+  document.getElementById("iconPic").src = "../resources/navbar/down.svg";
+}
+
+toggle = () => {
+  if (document.getElementById("navbar").className === "topnav")
+    openNav()
+  else
+    closeNav()
+}
+
+navClick = () => {
+  document.querySelector('.main').addEventListener('click', closeNav)
+}
+
+topNavClick = () => {
+  if (document.getElementById("navbar").className === "topnav")
+    openNav()
+  else
+    closeNav()
+}

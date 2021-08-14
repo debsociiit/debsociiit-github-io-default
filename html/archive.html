@@ -2,7 +2,8 @@
 <html>
 
 <head>
-  <title>DebSoc IIIT</title>
+  <title>DebSoc IIIT Hyderabad</title>
+  <link rel="icon" type="image/png" href="../resources/navbar/debsocsmall.svg" />
   <link rel="stylesheet" href="../css/style.css" />
   <link rel="stylesheet" href="../css/hoverSocial.css" />
   <link rel="stylesheet" href="../css/archive.css" />
@@ -14,9 +15,9 @@
 </head>
 
 <body onload="active('archive')">
-  <na-vi> </na-vi>
+  <na-vi onclick="topNavClick()"> </na-vi>
 
-  <section id="Archives">
+  <section class="main" id="Archives" onclick="navClick()">
     <div class="card">
       <button type="button" class="card__button" id="sum21">Summer 2021
         <span class="ongoing">ONGOING</span>
@@ -105,7 +106,7 @@
       </div>
     </div>
     <div class="card">
-      <button type="button" class="card__button" id="sum20" onclick="cardButton('sum20')">SUMMER 2020
+      <button type="button" class="card__button" id="sum20" onclick="cardButton('sum20')">MONSOON 2020
         <img src="../resources/navbar/down.svg" alt="Down icon" class="icon"></img>
         <img src="../resources/navbar/up.svg" alt="Up icon" class="icon" style="visibility: hidden;"></img>
       </button>
@@ -186,7 +187,7 @@
       </div>
     </div>
     <div class="card">
-      <button type="button" class="card__button" id="mon20" onclick="cardButton('mon20')">MONSOON 2020
+      <button type="button" class="card__button" id="mon20" onclick="cardButton('mon20')">SUMMER 2020
         <img src="../resources/navbar/down.svg" alt="Down icon" class="icon"></img>
         <img src="../resources/navbar/up.svg" alt="Up icon" class="icon" style="visibility: hidden;"></img>
       </button>
@@ -270,5 +271,4 @@
   <foo-ter>
   </foo-ter>
 </body>
-
 </html>
