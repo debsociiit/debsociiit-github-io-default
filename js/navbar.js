@@ -27,7 +27,7 @@ class Navi extends HTMLElement {
       </div>
       <div class="right">
         <a href="javascript:void(0)" class="arrow"
-          ><img id="iconPic" src="../resources/navbar/down.svg"
+          ><img id="iconPic" src="../resources/down.svg"
         /></a>
       </div>
     </div>
@@ -55,17 +55,6 @@ closeNav = () => {
 }
 
 toggle = () => {
-  if (document.getElementById("navbar").className === "topnav")
-    openNav()
-  else
-    closeNav()
-}
-
-navClick = () => {
-  document.querySelector('.main').addEventListener('click', closeNav)
-}
-
-topNavClick = () => {
   if (document.getElementById("navbar").className === "topnav")
     openNav()
   else
