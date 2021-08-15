@@ -2,11 +2,10 @@
   --clr-light: #ffffff;
   --clr-dark: #000000;
   --clr-primary: #000000;
-  --clr-accent: #af7b2d;
   --clr-buttons: invert(0%);
   --clr-buttons-active: invert(100%);
 }
-.darkmode {
+/* .darkmode {
   --clr-light: #1f1f1f;
   --clr-dark: #ffffff;
   --clr-buttons: invert(100%);
@@ -27,7 +26,7 @@
     --clr-buttons: invert(0%);
     --clr-buttons-active: invert(100%);
   }
-}
+} */
 
 ::-webkit-scrollbar {
   width: 0.5rem;
