@@ -43,7 +43,7 @@ active = (id) => {
 customElements.define("na-vi", Navi);
 
 openNav = () => {
-  if(window.innerWidth <= 800)
+  if (window.innerWidth <= 800)
     document.getElementById("navbar").className += " open";
 
   document.getElementById("iconPic").src = "../resources/up.svg";
