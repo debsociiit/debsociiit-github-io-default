@@ -5,5 +5,9 @@ html {
 body {
   background-color: white;
   margin: 0;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+
+@font-face {
+  font-family: 'MyWebFont';
+  src:  url('../resources/font/MyriadPro-Regular.woff') format('woff');
 }
