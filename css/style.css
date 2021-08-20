@@ -1,13 +1,12 @@
 html {
+  height: 94%;
   font-size: 14px;
 }
 
-@font-face {
-  font-family: 'Myriad Pro';
-  src:  url('../resources/font/MyriadPro-Regular.woff') format('woff');
-}
-
 body {
+  /* position: relative; */
+  position: relative;
+  min-height: 100%;
   background-color: white;
   margin: 0;
   font-family: 'Myriad Pro';
