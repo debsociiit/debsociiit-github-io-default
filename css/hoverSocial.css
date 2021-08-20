@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
 .social {
   position: fixed;
   right: 1rem;
@@ -42,28 +44,28 @@
 
 footer {
   background-color: black;
-  position: absolute;
+  margin-top: auto;
   height: 4rem;
   width: 100%;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  /* transform: translateY(-4rem); */
+  font-family: 'JetBrains Mono';
+}
+
+
+@font-face {
+  font-family: 'Jet-Brains Mono';
+  src: url();
 }
 
 .message {
-  position: absolute;
-  color: white;
   text-align: center;
-  margin-top: 1.5rem;
-  width: 100%;
+  color: white;
+  margin: 1.5rem 0;
 }
 
 @media (max-width: 900px) {
   .social {
     left: 50%;
     transform: translateX(-50%);
-    margin: 0 auto;
     width: max-content;
     height: 2rem;
   }
@@ -84,7 +86,8 @@ footer {
   #github {
     padding-right: 0;
   }
-  .footer {
+  footer {
     height: 9rem;
+    min-height: 9rem;
   }
 }
