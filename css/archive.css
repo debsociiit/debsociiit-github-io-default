@@ -15,9 +15,15 @@
   padding: 1rem;
 }
 
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('../resources/font/MyriadPro-Regular.woff');
+}
+
 .card__button {
   font-size: 28px;
   font-weight: bold;
+  font-family: 'Myriad Pro';
   display: block;
   width: 100%;
   text-align: left;
