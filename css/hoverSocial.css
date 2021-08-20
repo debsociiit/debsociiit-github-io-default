@@ -59,7 +59,7 @@ footer {
 .message {
   text-align: center;
   color: white;
-  margin: 1.5rem 0;
+  margin: 1.25rem 0;
 }
 
 @media (max-width: 900px) {
