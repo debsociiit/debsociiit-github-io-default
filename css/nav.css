@@ -80,11 +80,12 @@ body {
   padding: 0.33rem;
   display: flex;
   filter: var(--clr-buttons);
+  min-width: 15rem;
 }
 
 .Logo > img {
   content: url("../resources/navbar/logo.svg");
-}
+} 
 
 .pages {
   display: flex;
