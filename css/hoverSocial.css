@@ -8,7 +8,7 @@
   padding: 1rem;
   justify-content: space-around;
   border-radius: 1rem;
-  background-color: white;
+  background-color: var(--clr-light);
 }
 
 #insta {
@@ -17,6 +17,7 @@
 
 #github {
   padding-bottom: 0;
+  filter: var(--invert);
 }
 
 .social ul {
@@ -43,7 +44,7 @@
 }
 
 footer {
-  background-color: black;
+  background-color: #000000;
   margin-top: auto;
   height: 4rem;
   width: 100%;
@@ -58,7 +59,7 @@ footer {
 
 .message {
   text-align: center;
-  color: white;
+  color: #FFFFFF;
   margin: 1.25rem 0;
 }
 
