@@ -6,7 +6,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-light: #222222;
+    --clr-light: #36393e;
     --clr-dark: #FFFFFF;
     --invert: invert(100%);
   }
