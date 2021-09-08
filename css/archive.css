@@ -35,6 +35,10 @@
   padding: 0;
 }
 
+.nopointer {
+  cursor: default;
+}
+
 .a-icon {
   float: right;
   filter: var(--invert);
