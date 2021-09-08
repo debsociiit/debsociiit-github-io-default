@@ -1,32 +1,18 @@
 :root {
-  --clr-light: #ffffff;
-  --clr-dark: #000000;
   --clr-primary: #000000;
   --clr-buttons: invert(0%);
   --clr-buttons-active: invert(100%);
 }
-/* .darkmode {
-  --clr-light: #1f1f1f;
-  --clr-dark: #ffffff;
-  --clr-buttons: invert(100%);
-  --clr-buttons-active: invert(0%);
-}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --clr-light: #1f1f1f;
-    --clr-dark: #ffffff;
+    --clr-light: #171717;
+    --clr-dark: #FFFFFF;
+    --invert: invert(100%);
     --clr-buttons: invert(100%);
     --clr-buttons-active: invert(0%);
   }
-
-  .darkmode {
-    --clr-light: #ffffff;
-    --clr-dark: #000000;
-    --clr-buttons: invert(0%);
-    --clr-buttons-active: invert(100%);
-  }
-} */
+}
 
 ::-webkit-scrollbar {
   width: 0.5rem;
@@ -76,16 +62,23 @@ body {
   justify-self: flex-start;
   height: 4rem;
 }
+
 .Logo {
   padding: 0.33rem;
   display: flex;
-  filter: var(--clr-buttons);
+  /* filter: var(--clr-buttons); */
   min-width: 15rem;
 }
 
 .Logo > img {
   content: url("../resources/navbar/logo.svg");
 } 
+
+@media (prefers-color-scheme: dark) {
+  .Logo > img {
+    content: url(../resources/navbar/darkmodelogo.svg);
+  }
+}
 
 .pages {
   display: flex;

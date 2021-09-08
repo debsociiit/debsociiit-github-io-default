@@ -1,6 +1,6 @@
 #The-Team {
   margin: 3.5rem 10%;
-  color: black;
+  color: var(--clr-dark);
   text-rendering: optimizeLegibility;
 }
 
@@ -50,6 +50,10 @@
   font-size: 18px;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
+}
+
+.github {
+  filter: var(--invert);
 }
 
 .memberName {

@@ -25,7 +25,7 @@
 
 .card {
   display: flex;
-  background-color: white;
+  background-color: var(--clr-light);
   width: 52.6rem;
   margin: 1rem auto 0 auto;
   border-radius: 1rem;
@@ -136,7 +136,7 @@
   
   border: none;
   border-radius: 0.25rem;
-  color: white;
+  color: var(--clr-light);
   display: flex;
 
   align-items: center;
