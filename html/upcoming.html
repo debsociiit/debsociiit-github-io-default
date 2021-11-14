@@ -1,61 +1,89 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <title>DebSoc IIIT Hyderabad</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="../resources/navbar/debsocsmall.svg"
+    />
 
-<head>
-  <title>DebSoc IIIT Hyderabad</title>
-  <link rel="icon" type="image/png" href="../resources/navbar/debsocsmall.svg" />
+    <link rel="stylesheet" href="../css/upcoming.css" />
+    <link rel="stylesheet" href="../css/nav.css" />
+    <link rel="stylesheet" href="../css/hoverSocial.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <script type="text/javascript" src="../js/footer.js" defer></script>
+    <script type="text/javascript" src="../js/navbar.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
 
-  <link rel="stylesheet" href="../css/upcoming.css" />
-  <link rel="stylesheet" href="../css/nav.css" />
-  <link rel="stylesheet" href="../css/hoverSocial.css" />
-  <link rel="stylesheet" href="../css/style.css" />
-  <script type="text/javascript" src="../js/footer.js" defer></script>
-  <script type="text/javascript" src="../js/navbar.js"></script>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-</head>
-
-<body onload="active('upcoming')">
-  <na-vi onclick="toggle()"> </na-vi>
-  <section class="main" id="Upcoming" onclick="closeNav()">
-    <ul class="up-list">
-      <li class="up-sublist">
-        <div class="card navSpace" id="feli-debate">
-          <div class="image" id="up-himg">
-            <img src="../resources/Upcoming/markpost.png" alt="img related to the event" />
+  <body onload="active('upcoming')">
+    <na-vi onclick="toggle()"> </na-vi>
+    <section class="main" id="Upcoming" onclick="closeNav()">
+      <ul class="up-list">
+        <li class="up-sublist">
+          <div class="card navSpace" id="feli-debate">
+            <div class="image" id="up-himg">
+              <img
+                src="../resources/Upcoming/markpost.png"
+                alt="img related to the event"
+              />
+            </div>
+            <div class="content">
+              <div class="up-top">
+                <div class="up-heading" id="up-headm">
+                  IIIT MUN Registration Form
+                </div>
+                <section class="up-logos">
+                  <a
+                    href="https://www.facebook.com/groups/iiithdebsoc/permalink/4343921392311168/"
+                    target="_blank"
+                  >
+                    <img
+                      class="up-logo"
+                      id="up-logom"
+                      src="../resources/Social/facebook.svg"
+                    />
+                  </a>
+                  <a
+                    href="https://www.instagram.com/p/CUdYrBwB8S3/"
+                    target="_blank"
+                  >
+                    <img
+                      class="up-logo"
+                      id="up-logom"
+                      src="../resources/Social/instagram.svg"
+                    />
+                  </a>
+                </section>
+              </div>
+              <div class="up-content up-hide">
+                Debsoc announces the 4th edition of IIITMUN, from the 10th to
+                the 12th of December 2021, our first ever online inter-college
+                MUN. As you battle it out with the rest of the delegates,
+                IIITMUN will expose you to a host of world problems - not just
+                those we face currently, but potential ones that can arise in
+                the future too. We will challenge and direct you to design
+                solutions in a diplomatic manner, through continued discussion
+                and cooperation with delegates representing other countries.
+                <br />
+                <br />
+                Exciting debates and discussions await you about everything from
+                cyber-warfare to biotechnology. We hope to see you there!
+              </div>
+              <div class="up-ddline" id="up-ddm">DEADLINE: Nov 25th</div>
+              <div
+                class="up-btn apply"
+                id="up-butm"
+                onclick="window.open('https://drive.google.com/file/d/14_2y0kpbfe-eznDYIR0Elq7MRaYEEzNP/view', '_blank');"
+                style="cursor: pointer"
+              >
+                apply
+              </div>
+            </div>
           </div>
-          <div class="content">
-            <div class="up-top">
-              <div class="up-heading" id="up-headm">Marketing & Design form</div>
-              <section class="up-logos">
-                <a href="https://www.facebook.com/groups/iiithdebsoc/permalink/4343921392311168/" target="_blank">
-                  <img class="up-logo" id="up-logom" src="../resources/Social/facebook.svg" />
-                </a>
-                <a href="https://www.instagram.com/p/CUdYrBwB8S3/" target="_blank">
-                  <img class="up-logo" id="up-logom" src="../resources/Social/instagram.svg" />
-                </a>
-              </section>
-            </div>
-            <div class="up-content up-hide">
-              We are opening application forms for our marketing and design team.
-              <br />
-              <br />
-              Be a part of inter college events with the responsibility of ensuring that the events reach eyes and ears
-              of all, and provide a design language to debsoc. Be a part of people from some of the most active clubs in
-              iiit!
-              <br />
-              <br />
-              The deadline is on the 4th of october, don't miss it!
-            </div>
-            <div class="up-ddline" id="up-ddm">DEADLINE: Oct 4th</div>
-            <div class="up-btn apply" id="up-butm"
-              onclick="window.open('https://forms.office.com/r/Ry8YDya28B', '_blank');" style="cursor: pointer;">
-              apply
-            </div>
-
-          </div>
-        </div>
-      </li>
-      <!-- <li class="up-sublist">
+        </li>
+        <!-- <li class="up-sublist">
         <div class="card">
           <div class="image" id="up-himg">
             <img src="../resources/Upcoming/upcoming1.jpg" alt="img related to the event" />
@@ -134,13 +162,12 @@
           </div>
         </div>
       </li> -->
-    </ul>
-  </section>
+      </ul>
+    </section>
 
-  <footer>
-    <div class="message">Made with 💙 by DebSoc Dev Team</div>
-  </footer>
-  <foo-ter> </foo-ter>
-</body>
-
+    <footer>
+      <div class="message">Made with 💙 by DebSoc Dev Team</div>
+    </footer>
+    <foo-ter> </foo-ter>
+  </body>
 </html>
